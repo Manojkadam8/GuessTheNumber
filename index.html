@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+       <!-- section1 
+
+       generate button -->
+    <div id="section1">
+        <h2>Click The Below Button To Play Game</h2>
+         <button id="btn1" onclick="generate_random_number()">Generate Number</button>
+    </div>
+
+    <!-- section2 
+     guess number img
+     massage 
+     input field
+     check
+    
+    -->
+    <div id="section2">
+    <img src="https://media.tenor.com/vjUcQvJAVtoAAAAC/anonunicorn-question-mark.gif" alt="">
+
+    <p class="text">Guess The Number Between 1 to 6 </p>
+
+     <input type="text" id="input-field" placeholder="Enter Your Guess">
+     
+     <button onclick="check_number()">check</button>
+    </div>
+     
+
+    <!-- section3
+    img 
+    heading : generating number....
+    
+    -->
+    <div id="section3">
+     <img src="https://media.tenor.com/i_L5KauoCcoAAAAi/dice.gif" alt="">
+
+     <p class="heading">Generating Number.......</p>
+    </div>
+
+      <div id="section4">
+        <p id="results">
+            you won
+        </p>
+      </div>
+</div>
+    <script src="js.js"></script>
+</body>
+</html>
